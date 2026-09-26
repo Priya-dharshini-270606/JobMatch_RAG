@@ -64,3 +64,45 @@ ChromaDB Vector Database
                      │
                      ▼
                Final Report
+
+
+## Key Features
+
+- 📄 **Resume PDF Processing**  
+  Upload a resume in PDF format and automatically extract its content.
+
+- 🧩 **Section-Aware Resume Chunking**  
+  Separates resume content into sections such as Education, Experience, Projects, Technical Skills, and Certifications.
+
+- 🔎 **Semantic Resume Retrieval**  
+  Uses Sentence Transformers to retrieve resume evidence that is semantically relevant to each job requirement.
+
+- 🗄️ **Vector Database with ChromaDB**  
+  Stores resume embeddings and enables efficient similarity-based retrieval.
+
+- 🎯 **Required & Preferred Requirement Detection**  
+  Separates identified job requirements into required and preferred categories.
+
+- 🤝 **Evidence-Based Job Matching**  
+  Classifies requirements as **Matched, Partial, or Missing** based on resume evidence.
+
+- 🧠 **RAG-Powered AI Analysis**  
+  Uses retrieved resume evidence as context for the LLM instead of sending the entire resume blindly.
+
+- 🛡️ **Grounded LLM Responses**  
+  The LLM is instructed to use only the retrieved resume evidence and avoid inventing skills or experience.
+
+- 📊 **Match Summary Dashboard**  
+  Displays overall compatibility, matched requirements, partial requirements, and missing requirements.
+
+- 🔬 **Requirement-Level Analysis**  
+  Allows users to inspect the evidence, matched terms, evidence type, and AI analysis for individual requirements.
+
+- 💡 **Personalized Improvement Suggestions**  
+  Identifies areas where additional project evidence, implementation details, or experience could strengthen the resume.
+
+- 📑 **PDF Report Generation**  
+  Generates a downloadable JobMatch RAG report containing the matching results and detailed analysis.
+
+- 💻 **React + FastAPI Architecture**  
+  Provides a separate frontend and backend for a clean full-stack architecture.
